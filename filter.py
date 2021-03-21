@@ -26,6 +26,8 @@ class Filter:
             return cv2.resize(img, (width // 4, height // 4), interpolation=cv2.INTER_AREA)
         elif height >= 2800 and height < 3500:
             return cv2.resize(img, (width // 8, height // 8), interpolation=cv2.INTER_AREA)
+        else:
+            return img
 
     def execute(self, filepath):
         data = {}
@@ -35,7 +37,7 @@ class Filter:
         data["resized"] = img
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         data["grayscale"] = gray
-        median_blur = cv2.medianBlur(gray, 5)
+        median_blur = cv2.medianBlur(img, 5)
         data["blurred"] = median_blur
         adaptive_thresh = cv2.adaptiveThreshold(
             gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 9)

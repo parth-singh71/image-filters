@@ -10,6 +10,13 @@ Clone the repository, then cd to image-filters and run:
 pip install -r requirements.txt
 ```
 
+## **Outputs**
+
+<img src="outputs/output-1/painting.png" alt="Painting" width="200"/>
+<img src="outputs/output-1/toonified.png" alt="Toonified" width="200"/>
+<img src="outputs/output-2/blurred.png" alt="Blurred" width="200"/>
+<img src="outputs/output-2/grayscale.png" alt="GrayScale" width="200"/>
+
 ## **How to use?**
 
 ### For live detection with webcam
