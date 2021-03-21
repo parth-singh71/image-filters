@@ -10,19 +10,30 @@ Clone the repository, then cd to image-filters and run:
 pip install -r requirements.txt
 ```
 
-## **Outputs**
-
-<img src="outputs/output-1/painting.png" alt="Painting" width="200"/>
-<img src="outputs/output-1/toonified.png" alt="Toonified" width="200"/>
-<img src="outputs/output-2/blurred.png" alt="Blurred" width="200"/>
-<img src="outputs/output-2/grayscale.png" alt="GrayScale" width="200"/>
-
-## **How to use?**
-
-### For live detection with webcam
+## **Usage**
 
 ```bash
 python3 main.py
 ```
+
+
+## **Outputs**
+
+Painting
+
+<img src="outputs/output-1/painting.png" alt="Painting" width="300"/>
+
+Toonified
+
+<img src="outputs/output-1/toonified.png" alt="Toonified" width="300"/>
+
+Blurred
+
+<img src="outputs/output-2/blurred.png" alt="Blurred" width="300"/>
+
+GrayScale
+
+<img src="outputs/output-2/grayscale.png" alt="GrayScale" width="300"/>
+
 
 **Note:** You will find the outputs in: ```outputs/``` folder unless you specify a different path
